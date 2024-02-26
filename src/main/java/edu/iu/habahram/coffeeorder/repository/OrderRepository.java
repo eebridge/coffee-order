@@ -49,8 +49,6 @@ public class OrderRepository {
             }
         }
 
-
-        Random random = new Random();
         int id = (int) (Math.random() * 100000);
         Path path = Path.of("db.txt");
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(path.toFile(), true))) {
